@@ -39,6 +39,7 @@
 
   section {
     padding: 80px 15px;
+    padding-top: 20px;
     color: white;
     min-height: 200px;
     background-color: #444;
@@ -68,7 +69,7 @@
       height: 20px;
   }
 
-  .search-all {
+  .search-all, .add-vehicle {
     background-color: #aaa;
     color: #444;
 }

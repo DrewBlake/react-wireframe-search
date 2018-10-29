@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HTML Wireframe Sign Up Page</title>
+    <title>HTML Wireframe Search Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -16,18 +16,24 @@
     </nav>
     <main role="main">
         <header role="banner">
-            <h1>Access Inventory</h1>     
+            <h1>Access Granted!</h1> 
+            <h3>Search for existing vehicle or vehicles</h3>
+            <h3>Add new inventory</h3>    
         </header>
         <section class="search-all">
             <header>
                 <h2>Search Entire Inventory</h2>
-                <h3>Will list all vehicles and associated info</h3>
+                <h3>Will list all vehicles and associated info for 
+                    entire dealership stock
+                </h3>
+                
             </header>
             <button>Search All</button>
         </section>
-        <section>
+        <section class="search-id">
             <header>
                 <h2>Search By Vehicle ID</h2>
+                <h3>Gives information for specific vehicle selected</h3>
             </header>
             <form action='#' class='search-form'>
                 
@@ -39,8 +45,42 @@
                 <button type='submit'>Search</button>
             </form>
             <h3>After successful ID search you will have the ability
-                to update vehicle info or delete vehicle from Inventory.
+                to update vehicle info or delete vehicle from inventory.
             </h3>
+        </section>
+        <section class="add-vehicle">
+            <header>
+                <h2>Add Inventory</h2>
+                <h3>For recently purchased or traded in vehicles that
+                    need to be added to dealership inventory
+                </h3>
+            </header>
+            <form action='#' class='add-inventory'>
+                <div>
+                    <label for="year">Year</label>
+                    <input type="number" name='year' id='year' 
+                        required />
+                </div>
+                <div>
+                    <label for="make">Make</label>
+                    <input type="text" name='make' id='make' placeholder='Honda' 
+                        required />
+                </div>
+                <div>
+                    <label for="model">Model</label>
+                    <input type="text" name='model' id='model' placeholder='Accord'
+                        required />
+                </div>
+                <div>
+                    <label for="mileage">Mileage</label>
+                    <input type="number" name='mileage' id='mileage' required />
+                </div>
+                <div>
+                    <label for="location">Parking space</label>
+                    <input type="text" name='location' id='location' required />
+                </div>
+                <button type='submit'>Enter</button>
+            </form>
         </section>
        
     </main>
